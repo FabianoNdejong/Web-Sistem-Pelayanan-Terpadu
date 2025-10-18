@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sistem Pelayanan Terpadu</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">Sistem Pelayanan Terpadu</div>
+      <nav class="nav">
+        <a href="index.html" id="nav-home">Home</a>
+        <a href="#profil" id="nav-profil">Profil</a>
+        <a href="#layanan" id="nav-layanan">Layanan</a>
+        <a href="#pengajuan" id="nav-pengajuan">Pengajuan</a>
+        <a href="#status" id="nav-status">Cek Status</a>
+        <a href="#pengaduan" id="nav-pengaduan">Pengaduan</a>
+        <a href="#kontak" id="nav-kontak">Kontak</a>
+        <a class="btn" id="btn-login" href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-left">
+        <h1 id="hero-title">Sistem Pelayanan Terpadu</h1>
+        <p id="hero-sub">Melayani warga kota dengan cepat, mudah, dan transparan — semua dalam satu platform.</p>
+        <div id="greeting-line" style="margin:10px 0;color:var(--muted)"></div>
+
+        <div class="hero-actions">
+          <a href="login.html" class="btn-primary" id="cta-login">Masuk</a>
+          <a href="register.html" class="btn-ghost" id="cta-register">Daftar</a>
+        </div>
+
+        <div id="stats-row" style="display:flex;gap:12px;margin-top:18px">
+          <div class="stat"><h3 id="stat-users">—</h3><p>Pengguna Terdaftar</p></div>
+          <div class="stat"><h3 id="stat-pengajuan">—</h3><p>Pengajuan Diproses</p></div>
+          <div class="stat"><h3 id="stat-selesai">—</h3><p>Layanan Selesai</p></div>
+        </div>
+
+        <div style="margin-top:18px">
+          <h4>Pengumuman Terbaru</h4>
+          <ul id="announcements" class="announcements"></ul>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <img src="assets/img/hero-default.svg" alt="Ilustrasi Layanan Publik">
+      </div>
+    </section>
+
+    <section id="profil" class="section">
+      <div class="container">
+        <h2>Profil</h2>
+        <p>Kami memberikan layanan publik digital untuk memudahkan warga mengurus administrasi, perizinan, dan pengaduan.</p>
+      </div>
+    </section>
+
+    <section id="layanan" class="section section-alt">
+      <div class="container">
+        <h2>Layanan Kami</h2>
+        <div class="services-grid" id="services-grid"></div>
+      </div>
+    </section>
+
+    <section id="pengajuan" class="section">
+      <div class="container">
+        <h2>Pengajuan</h2>
+        <p>Isi formulir pengajuan layanan dengan mudah melalui akun Anda.</p>
+        <div class="cta-row">
+          <a class="btn-primary" href="login.html" id="btn-ajukan">Ajukan Layanan</a>
+          <a class="btn-ghost" href="register.html">Buat Akun</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="status" class="section section-alt">
+      <div class="container">
+        <h2>Cek Status</h2>
+        <p>Masukkan nomor tiket untuk melihat status pengajuan Anda.</p>
+        <div class="search-box">
+          <input id="ticket-input" placeholder="Masukkan nomor tiket...">
+          <button id="btn-search">Cari</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© 2025 Layanan Publik Terpadu</div>
+      <div class="small">Template UI — siap sambung ke PHP dan database</div>
+    </div>
+  </footer>
+
+  <div class="toast-wrapper" id="toast-wrapper" aria-live="polite" aria-atomic="true"></div>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
